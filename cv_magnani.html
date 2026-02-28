@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta  charset = "UTF-8">
+    <link rel = "stylesheet" type = "text/css" href = "styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cal+Sans&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+    <title>Victor Magnani's CV</title>
+  </head>
+    <body>
+      <div class="wrapper">
+        <div class="logo">
+          <img src="image_cv.jpg" alt="a logo" id="cv-photo"> 
+        </div>
+        
+        <div class="header-text">
+          <h1 class = "centeredText">VICTOR MAGNANI</h1>
+        </div>
+      </div>
+      <nav>
+          <p class = "centeredText"> victor.magnaniramos@gmail.com |
+            <a href="https://github.com/Ardet696/" target="_blank" title="GitHub: Ardet696">GitHub</a> |
+            <a href="https://www.linkedin.com/in/victormagnani/" target="_blank" title="LinkedIn: vmagnani">LinkedIn</a> |
+            <a href="https://open.spotify.com/user/qegjd2qtxressto5ii0mi7qj1?si=f2a9098cee58483b" target="_blank" title = "Spotify: victormagnani">Spotify</a>
+          </p>
+      </nav>
+        
+      <main>
+        <div class = "main-grid-page">
+          <div class = "grid-container">
+            <section class="education-container">
+              <h2 class="section-title">EDUCATION</h2>
+              <hr class="section-divider">
+              <div class="education-item">
+                <div class="education-header">
+                  <ul>
+                    <li>
+                      <h3 class="item-title">B.Sc. in Computer Engineering - La Salle BCN (Universitat Ramon Llull) </h3>
+                      <h2 class=" item-desc">International Computer Engineering <span class="date-hidden">~ Sept 2022 - May 2027</span></h2>
+                      <div class="education-content">
+                        <p class="item-desc">ABET-accredited program, taught in English.</p>
+                        <ul class="item-details">
+                          <li>Engineering Foundations: Multivariate Calculus, Algebra, Statistics, Electronics and Computer Architecture.</li>
+                          <li>Software Design: OOP, Relational DataBases, UI/UX and UML.</li> 
+                          <li>Computer Graphics, Version Control Software, Low level programming  cooperative programming.</li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="education-item">
+                <div class="education-header">
+                  <ul>
+                    <li>
+                      <h3 class="item-title">Science and Technology Baccalaureate - Sagrat Cor  <span class="date-hidden"> ~ Sept 2020 - May 2022</span></h3>
+                      <div class="education-content">
+                        <p class="item-desc"></p>Achieved High Distinction for my final research project, which focused on asset management and trading strategies for users without financial market experience.
+                        <ul class="item-details">
+                          <li>Track emphasizing mathematics, finance, physics, and engineering foundations.</li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class = "grid-container">  
+            <section class = "experience-container">
+              <h2 class="section-title">EXPERIENCE</h2>
+              <hr class="section-divider">
+              <p class="item-desc" style="margin-bottom: 10px;">I have not yet held a professional position in the software industry. However, these roles have given me real-world exposure to professional environments and have been valuable for my personal and professional development.</p>
+              <div class="experience-item">
+                <div class="experience-header">
+                  <ul>
+                    <li>
+                        <h3 class="item-title">Promotor at Samsung Galaxy <span class="date-hidden">~ Sept-October 2025</span></h3>                      <div class="experience-content">
+                          <ul>
+                            <li>Provided detailed information about Samsung Galaxy products to potential customers.</li>
+                            <li>Demonstrated product features and benefits to enhance customer understanding and interest.</li>
+                          </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="experience-item">
+                <div class="experience-header">
+                  <ul>
+                    <li>
+                      <h3 class="item-title">Meeter at CaixaBank <span class="date-hidden">~ Ago 2025</span></h3>
+                      <div class="experience-content">
+                        <ul>
+                          <li>Assisted customers with account inquiries, transactions, and digital banking services.</li>
+                          <li>Assisted senior asset managers with KYC preocedures and new users registrations.</li>
+                          <li>Ensured efficient service delivery and a positive customer experience.</li>                      
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="experience-item">
+                <div class="experience-header">
+                  <ul>
+                    <li>
+                      <h3 class="item-title">Maths Tutor <span class="date-hidden">~ 2023-2024</span></h3>                      <div class="experience-content">
+                        <ul>
+                          <li>Provided personalized tutoring sessions in mathematics for high school students.</li>
+                          <li>Developed tailored lesson plans to address individual learning needs and challenges.</li>
+                          <li>Utilized various teaching methods to enhance understanding and retention of mathematical concepts.</li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>  
+              </div>
+            </section>
+          </div>
+          <div class = "grid-container">     
+            <section class="project-container">
+              <h2 class="section-title">PROJECTS</h2>
+              <hr class="section-divider">
+              <div class ="project-item">
+                <div class="project-header">
+                  <ul>
+                    <li>
+                      <h3 class="item-title">MP3 TUI — Minimalist C++ Audio Player <span class="date-hidden">~ 2025</span></h3>
+                        <ul>
+                            <li>Designed a lock-free SPSC RingBuffer using <code>std::atomic</code> with explicit <code>acquire</code>/<code>release</code> memory ordering, feeding SDL's real-time audio callback without mutex contention or audio glitches.</li>
+                            <li>Managed five concurrent threads (decode, audio callback, TUI refresh, pre-warm, auto-advance) with C++20 <code>std::jthread</code> and cooperative cancellation via <code>stop_token</code>, achieving exception-safe lifecycle management through RAII.</li>
+                            <li>Implemented real-time DSP on the audio callback thread: FFT spectrum analysis, sharing results with the TUI via <code>std::atomic&lt;float&gt;</code> and a mutex-guarded vector.</li>
+                            <li>Applied RAII resource management through <code>std::unique_ptr</code> and the Pimpl idiom to decouple the audio pipeline (decoder, ring buffer, SDL sink) from the FTXUI terminal interface, keeping each component independently testable.</li>
+                        </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class ="project-item">
+                <div class="project-header">
+                  <ul>
+                    <li>
+                      <h3 class="item-title">MVVM Android App with Jetpack Compose, Room, and Coroutines. <span class="date-hidden">~ Summer 2025 - Present</span></h3>                        <ul>
+                            <li>Developed a native Android application implementing the MVVM architecture with a reactive UI in Jetpack Compose.</li>
+                            <li>Modeled a structured local database using Room with foreign-key relationships across entities; ensured data integrity and ACID-compliant operations.</li>
+                            <li>Used Kotlin Coroutines and Flow for asynchronous data handling and lifecycle-aware data streams.</li>
+                        </ul>
+                    </li>
+                  </ul>
+                </div> 
+              </div>
+            </section> 
+          </div>
+          <div class = "grid-container">
+            <section class = "certifications-container">
+              <h3 class="section-title">CERTIFICATIONS</h3> 
+              <hr class="section-divider">
+              <div class="certificate-item">
+                  <div class ="certifications-header">  
+                      <ul>
+                          <li>CCNA Introduction to Networks, issued by CISCO.<span class="date-hidden">~ June 2024</span></li>
+                          <li>Courses: (Python, Introduction to MachineLearning, Pandas) issued by Kaggle Learning.<span class="date-hidden">~ Ago 2025</span></li>
+                          <li>Study Tour program in Tokyo's Shibaure Institute of Technology, issued by SIT. <span class="date-hidden">~ June 2024</span></li>
+                          <li>[C1] Advanced English Certificate, issued by Cambridge University.<span class="date-hidden">~ July 2022</span></li>
+                      </ul>
+                  </div>
+                </div>
+            </section>
+          </div>  
+          <div class = "grid-container">
+            <section class="additional-container">
+              <h2 class="section-title">Additional Information</h2>
+              <hr class="section-divider">
+              <div class="additional-item">
+                <div class="additional-header">
+                  <ul>
+                    <li>
+                      <h3 class="item-title">Favourite Books</h3>
+                      <div class="additional-content">
+                        <ul class="item-details">
+                          <li>The path of the Samurai - Miyamoto Musashi</li>
+                          <li>The Art of Prudence - Baltasar Gracián</li>
+                          <li>Siddhartha - Hermann Hesse</li>
+                          <li>Frankenstein - Mary Shelley</li>
+                          
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="additional-item">
+                <div class="additional-header">
+                  <ul>
+                    <li>
+                      <h3 class="item-title">Volunteering</h3>
+                      <div class="additional-content">
+                        <ul class="item-details">
+                          <li>Built Website for HR company.</li>
+                          <li>Fixed a bunch of printers for annoying people, [2 printers remaining to reach The Tech Guy status :)]</li>
+                          <li>Environmental clean-up initiatives.</li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+          </div>
+          <section class="language-column final-col">
+            <h2 class="section-title">LANGUAGES</h2>
+            <hr class="section-divider">
+            <ul class="lang-list">
+                <li class="lang-item">
+                    <span class="lang-name">English</span>
+                    <span class="lang-level">Advanced · C1 CAE</span>
+                </li>
+                <li class="lang-item">
+                    <span class="lang-name">Spanish</span>
+                    <span class="lang-level">Native</span>
+                </li>
+                <li class="lang-item">
+                    <span class="lang-name">Italian</span>
+                    <span class="lang-level">Native</span>
+                </li>
+                <li class="lang-item">
+                    <span class="lang-name">Catalan</span>
+                    <span class="lang-level">C1</span>
+                </li>
+                <li class="lang-item">
+                    <span class="lang-name">German</span>
+                    <span class="lang-level">Basic · A1</span>
+                </li>
+            </ul>
+        </section>
+        
+        <section class="presentation-column final-col">
+            <h2 class="section-title">ABOUT ME</h2>
+            <hr class="section-divider">
+            <div class="presentation-content">
+                <p>
+                    I am a Computer Engineering student who likes to create stuff. I actively seek environments where
+                    I can be challenged, learn continuously, and contribute meaningfully.
+                </p>
+                <p>
+                    My main interests are <strong>concurrency and systems programming</strong>, especially in
+                    <strong>C++</strong>. I also have hands-on experience with <strong>low-level programming in C and Assembly</strong>, and practical knowledge of
+                    microcontroller development.
+                </p>
+                <p>
+                    Lately I have started contributing to <strong>open-source projects</strong> and deepening my
+                    understanding of <strong>computer architecture and low-latency systems</strong> — topics I
+                    find endlessly fascinating and practically important.
+                </p>
+            </div>
+        </section>
+
+        <section class="contact-column final-col">
+            <h2 class="section-title">CONTACT ME</h2>
+            <hr class="section-divider">
+            <div class="presentation-content">
+                <p>
+                    I am currently open to <strong>internship opportunities</strong> and eager to join motivated teams
+                    where I can contribute and keep growing. If you think we could build something great together, or I would be a good fit in your teams
+                    do not hesitate to reach out, I would love to hear from you.
+                </p>
+                <p>
+                    <a href="mailto:victor.magnaniramos@gmail.com">victor.magnaniramos@gmail.com</a>
+                </p>
+            </div>
+        </section>
+      </main>
+      <script src="script.js"></script>
+    </body>
+</html>
