@@ -39,9 +39,9 @@
                       <div class="education-content">
                         <p class="item-desc">ABET accredited program, taught in English.</p>
                         <ul class="item-details">
-                          <li>Software: Strong OOP design, Relational DataBases, UI/UX - Figma, Version Control - Git, UML documentation.</li> 
-                          <li>Computer Engineering Core: Networing , DataStructures & Algorithms, FPGA development,8bit-CPU cooperative systems, PIC18 Family, ASM/C for low level development.</li>
-                          <li>Honors in Ethics (Thought & Creativity 2) class.</li>  
+                          <li>Computer Engineering Core: Networing , DSA, FPGA development, 8bit-CPU architecture, cooperative systems for PIC18 Family, ASM/C for low level development.</li>
+                          <li>Honors in Ethics (Thought & Creativity 2) class.</li> 
+                          <li>Attended a study tour to Shibaura Institute of Technology in Tokyo.</li>
                       </ul>
                       </div>
                     </li>
@@ -56,7 +56,7 @@
                       <h3 class="item-title">Science and Technology Baccalaureate - Sagrat Cor  <span class="date-hidden"> ~ Sept 2020 - May 2022</span></h3>
                       <div class="education-content">
                         <ul class="item-details">
-                          <li>Achieved High Distinction for my final research project, which focused on asset management and trading strategies for retail traders without a quantitative background./li>
+                          <li>Achieved High Distinction for my final research project, which focused on asset management and trading strategies for retail traders without a quantitative background.</li>
                           <li>Track emphasizing mathematics, finance, physics, and engineering foundations.</li>
                         </ul>
                       </div>
@@ -125,15 +125,15 @@
                 <div class="project-header">
                   <ul>
                     <li>
-                      <h3 class="item-title">MP3 TUI: Minimalist C++ Winamp style Mp3Player <span class="date-hidden">~ January 2026 - Present</span></h3>
+                      <h3 class="item-title">MP3 Player: Minimalist C++ Winamp style Mp3Player in TUI<span class="date-hidden">~ January 2026 - Present</span></h3>
                         <ul>
                             <p>A terminal based MP3 player written in modern C++20, with a real time spectrum analyser, BPM driven animated visualisation, 
                               and a file-browsing music library for the linux-TUI community. Built from scratch using SDL2 and minimp3 for audio output for mp3->PCM decoding, the project focuses on 
                              low-latency audio, modern multi-threaded architecture, and modular component design. </p>
-                            <li>Designed a lock-free SPSC RingBuffer, feeding SDL's real-time audio callback without mutex contention or audio glitches.</li>
-                            <li>Managed five concurrent threads (decode, audio callback, TUI refresh, pre-warm, auto-advance) with C++20 <code>std::jthread</code>, achieving exception-safe lifecycle management through RAII.</li>
+                            <li>Lock-free SPSC RingBuffer, feeding SDL's audio callback without mutex contention or audio glitches.</li>
+                            <li>Managed threads (decode, audio callback, TUI refresh, pre-warm, auto-advance) with C++20 <code>std::jthread</code>.</li>
                             <li>Used FTXTUI library for the TUI interface. Ended up contributing to the repository implementing new features.</li>
-                            <li>Applied RAII resource management through <code>std::unique_ptr</code> and the Pimpl idiom to decouple the audio pipeline (decoder, ring buffer, SDL sink) from the FTXUI terminal interface, keeping each component independently testable.</li>
+                            <li>Applied RAII resource management through <code>std::unique_ptr</code>, Pimpl idiom to decouple the audio pipeline from the FTXUI terminal interface.</li>
                         </ul>
                     </li>
                   </ul>
@@ -169,7 +169,6 @@
                           <p>I usually read non fiction, but I have started to adopt interest in gothic novels.</p>
                           <li>The path of the Samurai - Miyamoto Musashi</li>
                           <li>The Art of Prudence - Baltasar Gracián</li>
-                          <li>Siddhartha - Hermann Hesse</li>
                           <li>Frankenstein - Mary Shelley</li>
                         </ul>
                       </div>
@@ -228,8 +227,8 @@
             <hr class="section-divider">
             <div class="presentation-content">
                 <p>
-                    I am a Computer Engineering student who likes to create stuff.<br></br> I actively seek environments where
-                    I can be challenged, learn continuously, and contribute meaningfully. I am product oriented but also love the technical details of how systems work under the hood.
+                    I actively seek environments where I can be challenged, learn continuously, and contribute meaningfully. 
+                    I am product oriented but also love the technical details of how systems work under the hood.
                 </p>
                 <p>
                     Lately I have started deepening my understanding of <strong>linux, computer architecture and low-latency systems</strong> , topics I
