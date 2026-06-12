@@ -1,4 +1,4 @@
-# Hosting here my static CV page.
+# Hosting here my personal static page, posting blogs and book reviews.
 
 - Built with HTML5, CSS3, and vanilla JavaScript.
 This was part of my 'Web Projects 1' course, so why not use it as online CV?
