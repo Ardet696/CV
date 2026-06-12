@@ -7,22 +7,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    const sectionsToHover = document.querySelectorAll(
-        '.education-item li, .experience-item li, .project-item li, .certifications-header li'
-    );
+    // Reveal the date next to each entry on hover.
+    document.querySelectorAll('.date-hidden').forEach(dateSpan => {
+        const target = dateSpan.parentElement;
+        if (!target) return;
 
-    sectionsToHover.forEach(item => {
-        const dateSpan = item.querySelector('.date-hidden');
-
-        if (dateSpan) {
-            item.addEventListener('mouseenter', () => {
-                dateSpan.classList.add('date-visible');
-            });
-
-            item.addEventListener('mouseleave', () => {
-                dateSpan.classList.remove('date-visible');
-            });
-        }
+        target.addEventListener('mouseenter', () => {
+            dateSpan.classList.add('date-visible');
+        });
+        target.addEventListener('mouseleave', () => {
+            dateSpan.classList.remove('date-visible');
+        });
     });
-
 });
